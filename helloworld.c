@@ -1,16 +1,20 @@
 #include<stdio.h>
-
+ //perimeter of rectangle  
 int main() {
-   int L;
-   printf("enter lenth of rectangle :");
-   scanf("%d\n", L);
+int a;
+printf("enter length a:");
+scanf("%d", &a);
 
-   int b;
-   printf(" enter breath of rectangle :");
-   scanf("%d\n", b );
+int b;
+printf("enter width b:");
+scanf("%d", &b);\
 
-   int perimeter = 2*(L +b);
-   printf("%d\n", perimeter);
+
+int perimeter;
+perimeter = 2*(a+b);
+printf("%d",perimeter);
+
+
 return 0;
 
 }
