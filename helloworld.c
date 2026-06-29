@@ -1,15 +1,14 @@
 #include<stdio.h>
- //declaration/ prototype
- void printHello();
+ 
+void calculatePrice(float value);
 
-
-int main() {
- printHello();// function call   
-  return 0;
+int main(){
+    float value =100.0;
+    calculatePrice(value);
+    return 0;
 }
 
-// function defination 
-void printHello() {
-    printf("Hello!");
-
+void calculatePrice(float value)  {
+    value = value + (0.18* value);
+    printf("final price is :%f", value);
 }
