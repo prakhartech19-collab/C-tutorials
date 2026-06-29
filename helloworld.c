@@ -1,14 +1,27 @@
 #include<stdio.h>
- 
-void calculatePrice(float value);
+ #include<math.h>
+//area of square
+float squareArea(float side);
+float circleArea(float rad);
+float rectangleArea(float a, float b);
 
 int main(){
-    float value =100.0;
-    calculatePrice(value);
+   float a=5.0;
+   float b =10.0;
+   
+   printf("area is: %f", rectangleArea(a,b));
     return 0;
 }
 
-void calculatePrice(float value)  {
-    value = value + (0.18* value);
-    printf("final price is :%f", value);
+
+
+float squareArea(float side) {
+     return side *side;
+}
+float circleArea(float rad){
+    return 3.14 *rad *rad;
+}
+
+float rectangleArea(float a, float b) {
+    return a* b;
 }
