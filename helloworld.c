@@ -1,21 +1,15 @@
 #include<stdio.h>
- //perimeter of rectangle  
+ //declaration/ prototype
+ void printHello();
+
+
 int main() {
-int a;
-printf("enter length a:");
-scanf("%d", &a);
-
-int b;
-printf("enter width b:");
-scanf("%d", &b);\
-
-
-int perimeter;
-perimeter = 2*(a+b);
-printf("%d",perimeter);
-
-
-return 0;
-
+ printHello();// function call   
+  return 0;
 }
 
+// function defination 
+void printHello() {
+    printf("Hello!");
+
+}
