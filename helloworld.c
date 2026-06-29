@@ -1,19 +1,14 @@
 #include<stdio.h>
  
-  int fact( int n);
+  float convertTemp(float celsius);
 
- int main() {
-     printf("factorial  is :%d", fact(5));
-      return 0;
+  int main() {
+   float far = convertTemp(0);
+   printf("far: %f", far);
+     return 0;
  }
  
-  int fact(int n) {
- if(n == 0) {
-     return 1;
- }
-  int factNm1 = fact(n-1);
-   int factN = factNm1 * n;
-   return factN;
+  float convertTemp(float celsius) {
+   float far = celsius *(9/5) + 32 ;
+    return far;
   }
-  
-
