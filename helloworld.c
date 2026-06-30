@@ -1,14 +1,24 @@
 #include<stdio.h>
  
-  float convertTemp(float celsius);
+   int fib(int n);
+
 
   int main() {
-   float far = convertTemp(0);
-   printf("far: %f", far);
+   fib(6);
      return 0;
  }
+  int fib( int n) {
+     if( n ==0) {
+       return 0;
+     }
+    if(n==1) {
+       return 1;
+    }
+
+  int fibNm1 = fib(n-1);
+  int fibNm2 = fib(n-2);
+  int fibN = fibNm1 + fibNm2;
+  printf("fib of %d is : %d \n", n, fibN);
+  return fibN;
+ }
  
-  float convertTemp(float celsius) {
-   float far = celsius *(9/5) + 32 ;
-    return far;
-  }
