@@ -1,15 +1,25 @@
 #include<stdio.h>
- 
+ void square(int n);
+void _square(int *n);
+
    int main() {
-    int* ptr;
-     int x;
+    int number = 4;
+    square(number);
+    printf("number = %d\n", number);
 
-     ptr =&x;
-     *ptr = 0;// from here we can say x =0
-
-     printf("x =%d\n", x); // print is 0
-     printf(" *ptr = %d\n" , *ptr);// print is 0
-     return 0;
- }
+    _square(&number);
+    printf("number = %d\n", number);
+     
+    return 0;
+   }  
+    //call by  value
+   void square(int n) { 
+    n = n * n;
+   }
+    //call by reference 
+    void _square(int *n)  {
+      *n = (*n) * (*n);
+      printf("square = %d\n", *n);
+    }
   
   
