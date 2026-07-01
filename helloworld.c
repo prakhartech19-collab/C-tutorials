@@ -1,18 +1,24 @@
 #include<stdio.h>
 
-void printAdress(int n) ;
-
+    void doWork( int a , int b , int *sum,  int  *prod , int *avg) ;
+        
  
   int main() {
-    int n = 4;
-    printAdress(n);
-    printf("Adress of n is %u\n", &n);
+     int a = 3 , b = 5;
+     int sum, prod, avg;
+   doWork(a, b, &sum, &prod, &avg);
+
+   printf("Sum: %d, prod = %d , avg = %d\n", sum , prod , avg);
    return 0;
    }  
  
-    void printAdress(int n) {
-    printf("Adress of n is %u\n", &n);
+    void doWork(int a , int b , int *sum, int *prod , int *avg) {
+        *sum = a+ b ;
+        *prod = a*b ;
+        *avg = (a+b) / 2;
     }
+
+    
 
 
 
