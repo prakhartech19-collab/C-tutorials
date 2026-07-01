@@ -1,17 +1,14 @@
 #include<stdio.h>
  
    int main() {
-    int age = 22;
-    int *ptr =&age;
-    
-    //address
-    //printf("%p", &age);
-    printf("%u\n", &age);
+    int* ptr;
+     int x;
 
-    printf("%u\n", ptr);
+     ptr =&x;
+     *ptr = 0;// from here we can say x =0
 
-    printf("%u\n", &ptr);
-    
+     printf("x =%d\n", x); // print is 0
+     printf(" *ptr = %d\n" , *ptr);// print is 0
      return 0;
  }
   
