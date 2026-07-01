@@ -1,32 +1,20 @@
 #include<stdio.h>
- void swap( int x, int y);
- void _swap(int*a, int*b);
+
+void printAdress(int n) ;
 
  
   int main() {
-  int x =3 ;
-  int y = 5;
-  _swap(&x, &y);
-  printf("x = %d& y = %d\n", x, y);
+    int n = 4;
+    printAdress(n);
+    printf("Adress of n is %u\n", &n);
    return 0;
    }  
-
-
-//call by reference
-  void _swap(int *a, int *b) {
-  int t = *a;
-  *a = *b;
-  *b =t;
+ 
+    void printAdress(int n) {
+    printf("Adress of n is %u\n", &n);
+    }
 
 
 
-  }
-   
-   //call by value 
-  void swap(int a , int b) {
-     int t = a;
-     a = b ;
-     b =t;
-     printf("a = %d& b = %d\n", a, b);
-  }
+  
   
