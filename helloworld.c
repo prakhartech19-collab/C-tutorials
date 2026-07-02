@@ -1,14 +1,10 @@
 #include<stdio.h>
+#include<limits.h>
 
   int main() {
-    int arr[] = {5, 10, 15, 20, 25};
-    int *p = arr;
-    int n = sizeof(arr) / sizeof(arr[0]);
-
-    for (int i = 0; i < n; i++) {
-        printf("%d\n ", *(p + i));
-    }
-    printf("\n");
+    int max =INT_MAX;
+    printf("Max int: %d\n", max);
+    printf("Max int + 1: %d\n", max + 1);
     return 0;
 } 
  
