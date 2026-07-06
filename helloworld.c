@@ -1,25 +1,22 @@
 #include<stdio.h>
 
-
+ int countodd(int arr[], int n);
+    
 int main() {
-    int aadhar[5];
-    
-    // input
-    int *ptr = &aadhar[0];
-    for(int i = 0; i < 5; i++) {
-        printf(" %d Index: ", i);
-        scanf("%d", (ptr + i));
-    }
-
-  // output
-  for(int i=0; i<5; i++){
-  printf("%d index = %d\n", i, *(ptr+i));
-  }
-    return 0;
-} 
+ int arr[] = {1, 2, 3, 4, 5,6};
+ printf("%d",countodd(arr,6));
  
-    
-    
+ return 0;
+} 
+  int countodd( int arr[], int n) {
+    int count = 0;
+    for(int i = 0; i < n; i++) {
+        if(arr[i] % 2 != 0) {
+            count++;
+        }
+    }
+    return count;
+  } 
 
 
 
