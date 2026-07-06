@@ -1,10 +1,12 @@
 #include<stdio.h>
-#include<limits.h>
 
-  int main() {
-    int max =INT_MAX;
-    printf("Max int: %d\n", max);
-    printf("Max int + 1: %d\n", max + 1);
+
+int main() {
+   int age = 22;
+   int *ptr = &age;
+ printf("ptr = %u\n", ptr);
+   ptr++;
+ printf("ptr = %u\n", ptr);
     return 0;
 } 
  
