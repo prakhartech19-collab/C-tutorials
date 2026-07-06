@@ -2,14 +2,19 @@
 
 
 int main() {
-    int age =22 ;
-    int _age = 23;
-    int *ptr = &age;
-    int *_ptr = &_age;
+    int aadhar[5];
+    
+    // input
+    int *ptr = &aadhar[0];
+    for(int i = 0; i < 5; i++) {
+        printf(" %d Index: ", i);
+        scanf("%d", (ptr + i));
+    }
 
-    printf("difference =%u\n ", ptr-_ptr);
-    _ptr = &age;
-    printf("comparison =%u\n ", ptr ==_ptr);
+  // output
+  for(int i=0; i<5; i++){
+  printf("%d index = %d\n", i, *(ptr+i));
+  }
     return 0;
 } 
  
