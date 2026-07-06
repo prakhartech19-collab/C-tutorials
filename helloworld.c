@@ -3,33 +3,27 @@
 
 
 int main() {
-   int day;
-   scanf("%d", &day);
-  switch(day) {
-   case 1:
-   printf("Monday");
-   break;
-   case 2:
-   printf("Tuesday");
-   break;
-   case 3:
-   printf("Wednesday");
-   break;
-   case 4:
-   printf("Thursday");
-   break;
-   case 5:
-   printf("Friday");
-   break;
-   case 6:
-   printf("Saturday");
-   break;
-   case 7:
-   printf("Sunday");
-   break;
-default:
-printf("Invalid Day");
-  }
+   int a,b ;
+   char op;
+    
+   scanf("%d\n, %c\n, %d\n", &a ,&op , &b);
+    switch(op){
+      case'+':
+      printf("%d", a+b);
+      break;
+      case'-':
+      printf("%d", a-b);
+      break;
+      case '*' :
+      printf("%d", a*b);
+      break;
+      case'/':
+      printf("%d", a/b);
+      break;
+    default:
+    printf("Invalid operator");
+
+    }
 
 return 0;
 
