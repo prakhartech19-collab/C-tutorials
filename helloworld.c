@@ -1,29 +1,38 @@
 #include<stdio.h>
 
- void reverse(int arr[], int n);
-  void printArr(int arr[], int n);
+
 
 int main() {
- int arr[] = {1,2,3,4,5};
- reverse(arr, 5);
- printArr(arr, 5);
- return 0;
-} 
- void printArr(int arr[],int n){
-  for(int i=0; i<n; i++){
-   printf("%d\t",arr[i] );
+   int day;
+   scanf("%d", &day);
+  switch(day) {
+   case 1:
+   printf("Monday");
+   break;
+   case 2:
+   printf("Tuesday");
+   break;
+   case 3:
+   printf("Wednesday");
+   break;
+   case 4:
+   printf("Thursday");
+   break;
+   case 5:
+   printf("Friday");
+   break;
+   case 6:
+   printf("Saturday");
+   break;
+   case 7:
+   printf("Sunday");
+   break;
+default:
+printf("Invalid Day");
   }
- }
- void reverse(int arr[], int n) {
-  for(int i = 0; i < n / 2; i++) {
-    int fristval = arr[i];
-    int secondval = arr[n-i-1];
-    arr[i] = secondval;
-    arr[n-i-1] =fristval;
 
-  }
- }
+return 0;
+
+}
 
 
-  
-  
