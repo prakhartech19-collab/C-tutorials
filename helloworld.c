@@ -1,16 +1,31 @@
 #include<stdio.h>
+#include<string.h>
 
 void printString(char arr[]);
+int countlength(char arr[]);
 
 int main() {
-    char fristName[]="PRAKHAR";
-    char lastName[]="TRIPATHI";
- 
-    printString(fristName);
-    printString(lastName);
-    
-return 0;
+    char str[100];
+    char ch;
+   int i=0;
 
+    while(ch != '\n') {
+      scanf("%c", &ch);
+       str[i] = ch;
+      i++; 
+    }
+    str[i] = ch;
+    puts(str);
+}
+
+
+
+int countlength(char arr[]){
+  int count =0;
+  for(int i=0; arr[i] !='\0'; i++ ){
+    count++; 
+  }
+  return count-1; 
 }
 
  void printString(char arr[]) {
