@@ -1,32 +1,21 @@
 #include<stdio.h>
 
-
+void printString(char arr[]);
 
 int main() {
-   int a,b ;
-   char op;
+    char fristName[]="PRAKHAR";
+    char lastName[]="TRIPATHI";
+ 
+    printString(fristName);
+    printString(lastName);
     
-   scanf("%d\n, %c\n, %d\n", &a ,&op , &b);
-    switch(op){
-      case'+':
-      printf("%d", a+b);
-      break;
-      case'-':
-      printf("%d", a-b);
-      break;
-      case '*' :
-      printf("%d", a*b);
-      break;
-      case'/':
-      printf("%d", a/b);
-      break;
-    default:
-    printf("Invalid operator");
-
-    }
-
 return 0;
 
 }
 
-
+ void printString(char arr[]) {
+  for(int i=0; arr[i] !='\0'; i++){
+    printf("%c", arr[i]);
+  }
+  printf("\n");
+ }
