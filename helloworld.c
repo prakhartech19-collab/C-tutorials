@@ -3,21 +3,23 @@
 
 void printString(char arr[]);
 int countlength(char arr[]);
+void salting(char password[]);
+
 
 int main() {
-    char str[100];
-    char ch;
-   int i=0;
-
-    while(ch != '\n') {
-      scanf("%c", &ch);
-       str[i] = ch;
-      i++; 
-    }
-    str[i] = ch;
-    puts(str);
+    char password[100];
+     scanf("%s", password);
+      salting(password);
+  
 }
+  void salting(char password[]) {
+    char salt[] = "123";
+    char newpassword[200];
 
+    strcpy(newpassword, password);// newpass ="test"
+    strcat(newpassword , salt); // newpass ="test" +"123";
+     puts(newpassword);
+  }
 
 
 int countlength(char arr[]){
