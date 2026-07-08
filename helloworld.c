@@ -2,22 +2,27 @@
 #include <string.h>
 
 //user defined
- struct student {
+    typedef struct student {
    int roll;
     float cgpa;
      char name[100];
- };
-
+ }stu ;
+   
+ typedef struct computerengineeringstudent {
+  int roll;
+    float cgpa;
+     char name[100];
+ } coe;
 
 int main() {
-   struct student s1 = {1664, 9.2, "prakhar"};
-   printf(" student roll = %d\n" , s1.roll);
+    coe s1;
+    s1.roll = 1664;
+    s1.cgpa = 9.2;
+    strcpy( s1.name, "prakhar");
 
-   struct student *ptr = &s1;
-   printf("student with ptr roll = %d\n",(*ptr). roll);
-   printf("student->roll = %d\n", ptr->roll);
+    printf("student name is =%s\n", s1.name);
 
-
-
-   return 0;
+    return 0;
   }
+
+   
