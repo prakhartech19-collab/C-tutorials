@@ -10,15 +10,12 @@
 
 
 int main() {
-   struct student s1;
-   s1.roll = 1664;
-   s1.cgpa = 9.2;
-   //s1.name="prakhar";
-   strcpy(s1.name,"prakhar");
+   struct student s1 = {1664, 9.2, "prakhar"};
+   printf(" student roll = %d\n" , s1.roll);
 
-   printf("student name is = %s\n", s1.name);
-   printf("student roll no= %d\n", s1.roll);
-   printf("student cgpa = %f\n", s1.cgpa);
+   struct student *ptr = &s1;
+   printf("student roll = %d\n",(*ptr). roll);
+
 
    return 0;
   }
