@@ -14,7 +14,9 @@ int main() {
    printf(" student roll = %d\n" , s1.roll);
 
    struct student *ptr = &s1;
-   printf("student roll = %d\n",(*ptr). roll);
+   printf("student with ptr roll = %d\n",(*ptr). roll);
+   printf("student->roll = %d\n", ptr->roll);
+
 
 
    return 0;
