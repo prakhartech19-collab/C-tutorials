@@ -1,28 +1,23 @@
 #include<stdio.h>
-#include <string.h>
 
-//user defined
-    typedef struct student {
-   int roll;
-    float cgpa;
-     char name[100];
- }stu ;
-   
- typedef struct computerengineeringstudent {
-  int roll;
-    float cgpa;
-     char name[100];
- } coe;
 
-int main() {
-    coe s1;
-    s1.roll = 1664;
-    s1.cgpa = 9.2;
-    strcpy( s1.name, "prakhar");
 
-    printf("student name is =%s\n", s1.name);
 
+  int main() {
+    FILE *fptr;
+    fptr = fopen(" NewText.txt","r");
+     char ch;
+     ch = fgetc(fptr);
+     while(ch !=EOF){
+       printf("%c", ch);
+       ch =  fgetc(fptr);
+
+     }
+     printf("\n");
+     
+    fclose(fptr);
     return 0;
   }
 
+  
    
