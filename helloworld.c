@@ -1,17 +1,28 @@
 #include<stdio.h>
 
     int main() {
-    int n,  i, num ,sum =0;
-     printf("enter the number of elements :");
-     scanf("  %d\n", &n);
-    
-     for(int i =0; i<n; i++ ){
-        printf("enter number%d:", i);
+    int n,i, num, max;
+     printf("enter n:");
+     scanf("%d", &n);
+
+      printf("enter frist number:");
+     scanf("%d", &max);
+
+      for(int i=1; i< n; i++){
+        printf("enter  number %d:", i);
         scanf("%d", &num);
 
-        sum = sum +num;
-     }
-     printf("sum = %d\n", sum);
+         if(num> max){
+        max = num ;
+      }
+      }
+     
+      printf("Max = %d",max);
+
+      
+      
+    
+
 
     return 0;
   }
