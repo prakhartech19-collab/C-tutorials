@@ -1,10 +1,18 @@
 #include<stdio.h>
 
     int main() {
-   
-    for(int i = 0; i<=100; i++){
-      printf("number is %d\n", i);
-    }
+    int n,  i, num ,sum =0;
+     printf("enter the number of elements :");
+     scanf("  %d\n", &n);
+    
+     for(int i =0; i<n; i++ ){
+        printf("enter number%d:", i);
+        scanf("%d", &num);
+
+        sum = sum +num;
+     }
+     printf("sum = %d\n", sum);
+
     return 0;
   }
 
