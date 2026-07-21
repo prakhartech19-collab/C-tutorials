@@ -1,21 +1,10 @@
 #include<stdio.h>
 
-
-
-
-  int main() {
-    FILE *fptr;
-    fptr = fopen(" NewText.txt","r");
-     char ch;
-     ch = fgetc(fptr);
-     while(ch !=EOF){
-       printf("%c", ch);
-       ch =  fgetc(fptr);
-
-     }
-     printf("\n");
-     
-    fclose(fptr);
+    int main() {
+   
+    for(int i = 0; i<=100; i++){
+      printf("number is %d\n", i);
+    }
     return 0;
   }
 
