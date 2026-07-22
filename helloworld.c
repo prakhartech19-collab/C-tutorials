@@ -1,18 +1,21 @@
 #include<stdio.h>
 
 int main(){
- int yearType;
- printf("enter no of days in year:");
- scanf("%d", & yearType);
+ int N1, N2;
+ printf(" N1  is : ");
+ scanf("%d", &N1);
+ printf(" N2 is :");
+ scanf("%d", N2);
 
- 
 
- if(yearType=366){
-  printf("Year is leap year ");
- }
- else if ( yearType = 365 ){
-  printf(" its a simple year");
- }
+  if(N1>N2){
+    printf(" frist no is greater than second ");
+  }else if( N1<N2){
+    printf( " frist number is less than second");
+  }else if ( N1 = N2){
+    printf( "both N1 & N2 are equal");
+
+  }
 
   return 0;
 }
