@@ -3,13 +3,20 @@
  // area of rectangle  
 
 int main() {
-    float  temp , far;
-    
-    printf("enter temp :");
-    scanf("%f", &temp);
+    int principle, rate , time , SI;
 
-   far = (temp * 9.0/5.0) + 32 ;
-    printf(" Far temp is  : %f\n", far);
+    printf("enter principle :");
+    scanf("%d", &principle);
+
+    printf("enter rate :");
+    scanf("%d", &rate);
+
+    printf("enter time :");
+    scanf("%d", &time);
+
+    SI = (principle * rate * time)/100;
+
+    printf(" SI is  : %d", SI);
 
     return 0;
   }
