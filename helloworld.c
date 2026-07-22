@@ -1,22 +1,24 @@
 #include<stdio.h>
 #include<math.h>
- // area of rectangle  
+
 
 int main() {
-    int principle, rate , time , SI;
+   int a , b;
+    
+   printf("enter a:");
+   scanf("%d", &a);
 
-    printf("enter principle :");
-    scanf("%d", &principle);
+   printf("enter b :");
+   scanf("%d", &b);
 
-    printf("enter rate :");
-    scanf("%d", &rate);
+   a = a + b ;
+    b = a - b;
+   a = a - b;
 
-    printf("enter time :");
-    scanf("%d", &time);
+   printf(" finali value  of a is :%d\n  ",a);
+   printf("final value of b is : %d\n ", b);
 
-    SI = (principle * rate * time)/100;
 
-    printf(" SI is  : %d", SI);
 
     return 0;
   }
