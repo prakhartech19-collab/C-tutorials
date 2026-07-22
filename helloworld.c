@@ -1,14 +1,17 @@
 #include<stdio.h>
 
 int main(){
- int num;
- printf(" enter a number :");
- scanf("%d",&num);
+ int yearType;
+ printf("enter no of days in year:");
+ scanf("%d", & yearType);
 
- if(num % 2==0){
-  printf("number is EVEN");
- }else {
-  printf("number is ODD");
+ 
+
+ if(yearType=366){
+  printf("Year is leap year ");
+ }
+ else if ( yearType = 365 ){
+  printf(" its a simple year");
  }
 
   return 0;
