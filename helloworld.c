@@ -1,27 +1,19 @@
 #include<stdio.h>
-#include<math.h>
 
+int main(){
+  int age ;
+  printf("enter age :");
+  scanf("%d", &age );
 
-int main() {
-   int a , b;
-    
-   printf("enter a:");
-   scanf("%d", &a);
+  if( age>=18){
+    printf("eligible for vote");
+  }
+  else{
+    printf(" not eligible for vote");
 
-   printf("enter b :");
-   scanf("%d", &b);
-
-   a = a + b ;
-    b = a - b;
-   a = a - b;
-
-   printf(" finali value  of a is :%d\n  ",a);
-   printf("final value of b is : %d\n ", b);
-
-
-
-    return 0;
   }
 
-  
-   
+
+
+  return 0;
+}
