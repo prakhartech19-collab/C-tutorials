@@ -1,19 +1,19 @@
 #include<stdio.h>
 
 int main(){
-  int age ;
-  printf("enter age :");
-  scanf("%d", &age );
+ int num;
+ printf(" enter a number :");
+ scanf("%d", &num);
 
-  if( age>=18){
-    printf("eligible for vote");
-  }
-  else{
-    printf(" not eligible for vote");
-
-  }
-
-
+ if(num >0){
+ printf("number is possitive");
+ } else if( num < 0){
+  printf("number is negative");
+ } else if( num == 0){
+  printf(" number is zero");
+  
+ }
+ 
 
   return 0;
 }
