@@ -3,17 +3,13 @@
 int main(){
  int num;
  printf(" enter a number :");
- scanf("%d", &num);
+ scanf("%d",&num);
 
- if(num >0){
- printf("number is possitive");
- } else if( num < 0){
-  printf("number is negative");
- } else if( num == 0){
-  printf(" number is zero");
-  
+ if(num % 2==0){
+  printf("number is EVEN");
+ }else {
+  printf("number is ODD");
  }
- 
 
   return 0;
 }
