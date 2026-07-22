@@ -1,20 +1,14 @@
 #include<stdio.h>
 
 int main(){
- int N1, N2;
- printf(" N1  is : ");
- scanf("%d", &N1);
- printf(" N2 is :");
- scanf("%d", N2);
-
-
-  if(N1>N2){
-    printf(" frist no is greater than second ");
-  }else if( N1<N2){
-    printf( " frist number is less than second");
-  }else if ( N1 = N2){
-    printf( "both N1 & N2 are equal");
-
+ int num ;
+ printf(" num  is : ");
+ scanf("%d", &num);
+ 
+  if( num % 5 ==0 &&  num % 11 == 0){
+    printf(" Number is divisible by 11 & 5 ");
+  }else {
+    printf( " number is not divisible by 11 & 5");
   }
 
   return 0;
