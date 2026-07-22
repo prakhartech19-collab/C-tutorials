@@ -3,19 +3,13 @@
  // area of rectangle  
 
 int main() {
-    int a,b,Area;
-    printf("enter a :");
-    scanf("%d", &a);
+    float  temp , far;
+    
+    printf("enter temp :");
+    scanf("%f", &temp);
 
-    printf("enter b: ");
-    scanf("%d", &b);
-
-    // Area = a* b ;  //for area of rectangle
-
-    // printf("Area is ;%d\n ", Area);
-
-    Area = 3.14 * a * b ;
-    printf("Area is ;%d\n ", Area);
+   far = (temp * 9.0/5.0) + 32 ;
+    printf(" Far temp is  : %f\n", far);
 
     return 0;
   }
