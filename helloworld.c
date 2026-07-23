@@ -1,13 +1,14 @@
 #include<stdio.h>
 
 int main(){
- int n , i , Table ;
- printf(" enter a number :");
- scanf("%d", &n);
+ int i,j;
 
- for(int i = 1; i<=10 ; i++){
-   Table = n* i; 
-  printf("%d\n", Table);
+ for( int i= 1; i<=5; i++){
+  for(int j = 1; j<= i ; j++){
+  
+    printf("%d",j);
+  }
+  printf("\n");
  }
 
   return 0;
