@@ -1,24 +1,14 @@
 #include<stdio.h>
 
 int main(){
- int n , rev =0, r, original ;
- printf("enter a number :");
- scanf("%d",&n );
+ int n , i , Table ;
+ printf(" enter a number :");
+ scanf("%d", &n);
 
-
-  original = n;
-
- while( n!= 0){
-   r= n %10;
-   rev = rev*10 +r;
-   n = n/10;
- } if( rev == original  ){
- printf(" palindrome ");
- }
-  else {
-  printf(" Not a palindrome");
+ for(int i = 1; i<=10 ; i++){
+   Table = n* i; 
+  printf("%d\n", Table);
  }
 
-  
   return 0;
 }
