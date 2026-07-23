@@ -1,23 +1,23 @@
 #include<stdio.h>
  
-void check( int  num);
-
+ int larg( int a, int b);
 
 int main(){
- int num;
- printf("enter a number :");
- scanf("%d", &num);
-  
-  check( num);
+  int a, b;
+  printf("enter two numbers :");
+  scanf("%d%d", &a , &b);
 
+  larg( a,b);
 
   return 0;
   }
-  void check( int num ){
-    if( num % 2 == 0 ){
-      printf(" number is even ");
-    }else {
-      printf( "number is odd ");
-    } return ;
-  }
+  int larg(int a , int b) {
+    if(a>b){
+      return printf(" a is largest:%d");
+    } else if( a< b){ 
+       return printf(" a is less than b ");
+
+    }
     
+  }
+  
