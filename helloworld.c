@@ -1,22 +1,15 @@
 #include<stdio.h>
+ 
+int sum(int a , int b);
 
 int main(){
- char star ='*';
- int i ,s, j;
-
-  
-   
-      
-    
-    for( int i = 1; i<=5 ; i++){
-       for( int s= 1; s<=5 - i; s++)
-    printf(" ");
-      for(int j =1 ; j<=2*i -1 ;j++)
-      printf("*");
-     printf("\n");
-      }
-   
-  
-   
+   int result;
+   result = sum( 10, 20);
+   printf("sum =%d", result);
+ 
   return 0;
 }
+int sum(int a , int b){
+  return a + b;
+}
+ 
