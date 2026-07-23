@@ -1,17 +1,23 @@
 #include<stdio.h>
  
- int square( int num);
+void check( int  num);
+
 
 int main(){
  int num;
  printf("enter a number :");
  scanf("%d", &num);
+  
+  check( num);
 
- 
- printf(" square is :%d",  square(num) );
-   
+
   return 0;
   }
-   int square( int num){
-    return num * num;
+  void check( int num ){
+    if( num % 2 == 0 ){
+      printf(" number is even ");
+    }else {
+      printf( "number is odd ");
+    } return ;
   }
+    
