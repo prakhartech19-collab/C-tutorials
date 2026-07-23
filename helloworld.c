@@ -1,23 +1,13 @@
 #include<stdio.h>
 
 int main(){
- int a, b, c;
- printf(" enter a:");
- scanf("%d", &a);
-
-printf(" enter b:");
- scanf("%d", &b);
+  int i;
  
-printf(" enter c:");
- scanf("%d", &c);
-
- if( a>b && a>c){
-  printf(" a is greatest in this  three numbers");
- }else if ( b>a && b>c){
-  printf(" b is greatest of this three numbers");
- }else if ( c>a && c >b){
-  printf( " c is greatest of this three numbers ");
- }
- 
+  
+  for( int i=1; i<=100; i++){
+    if( i % 2 == 0){
+      printf("%d\n", i);
+    }
+  }
   return 0;
 }
