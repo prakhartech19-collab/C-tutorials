@@ -3,28 +3,18 @@
  
 
 int main(){
- int n , i ;
- int isprime = 1; // assume prime until proven otherwise
+ int n =1 , i ;
+ int fact =1 ;
 
- printf(" enter a number :");
- scanf("%d",&n);
+ printf(" calculate factorial of :");
+ scanf("%d", &n);
 
- if( n<=1){
-  printf(" given number is not  prime");
- }else{
-  for ( int i = 2; i<=n-1; i++ ){
-    if( n % i == 0 ){
-      isprime =0;
-      break;
-    }
-   }
-   if( isprime){
-   printf("enter number is prime");
-   }else{
-    printf(" enter number is not prime ");
-   }
+ for( i =1; i<=n;i++){
+  fact = fact * i;
  }
- 
+  printf(" factorial is %d", fact);
+
+  
   return 0;
   }
   
