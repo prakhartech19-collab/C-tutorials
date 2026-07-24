@@ -1,23 +1,33 @@
 #include<stdio.h>
  
- int larg( int a, int b);
+ 
 
 int main(){
-  int a, b;
-  printf("enter two numbers :");
-  scanf("%d%d", &a , &b);
+ int n , i ;
+ int isprime = 1; // assume prime until proven otherwise
 
-  larg( a,b);
+ printf(" enter a number :");
+ scanf("%d",&n);
 
+ if( n<=1){
+  printf(" given number is not  prime");
+ }else{
+  for ( int i = 2; i<=n-1; i++ ){
+    if( n % i == 0 ){
+      isprime =0;
+      break;
+    }
+   }
+   if( isprime){
+   printf("enter number is prime");
+   }else{
+    printf(" enter number is not prime ");
+   }
+ }
+ 
   return 0;
   }
-  int larg(int a , int b) {
-    if(a>b){
-      return printf(" a is largest:%d");
-    } else if( a< b){ 
-       return printf(" a is less than b ");
-
-    }
+  
     
-  }
+  
   
