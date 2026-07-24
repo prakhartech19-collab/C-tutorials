@@ -1,25 +1,36 @@
 #include<stdio.h>
  
-int revr(  int n);
- 
-int n , rev =0 , r;
+ int HCF( int a, int b);
+ int a,b ;  // a is less than b
+ int n =1;
+
+
 
 int main(){
-  printf(" enter a number :");
-  scanf("%d", &n);
+     
+ printf(" enter  a:");
+ scanf("%d",&a);
+ printf(" enter b:");
+ scanf("%d", &b);
 
-  revr(  n);
-
+   int ans = HCF( a, b);
+   printf("%d", ans);
   return 0;
   }
-  int   revr( int n){
-    while( n!=0){
-        r = n%10;
-        rev = rev* 10 + r;
-        n = n /10;
-  } 
-  return
-  printf(" reversed number is : %d", rev);
+  int HCF( int a , int b ){
+
+    int hcf=1;
+
+    for( int n = 1; n<=(a< b? a:b);n++){
+   
  
-  }
+if( a% n ==0 && b% n == 0){
+        hcf = n;
+    }
+  } 
+  return hcf;
+}
+
+  
+ 
    
