@@ -1,23 +1,39 @@
 #include<stdio.h>
  
- 
+void prime( );
+
+int n , i;
+int isprime =1;
 
 int main(){
- int n =1 , i ;
- int fact =1 ;
+ 
 
- printf(" calculate factorial of :");
- scanf("%d", &n);
+ printf("enter a number :");
+ scanf("%d",&n);
 
- for( i =1; i<=n;i++){
-  fact = fact * i;
- }
-  printf(" factorial is %d", fact);
+ prime();
 
-  
+
+
   return 0;
   }
-  
+   void prime(){
+    if(n<=1){
+        printf(" entered number is not prime ");
+    }else {
+        for(int i =2; i<= n-1; i++){
+        if( n% i ==0){
+            isprime =0;
+            break;
+        }
+        }
+        if(isprime){
+            printf("entered number is prime");
+        } else {
+            printf("entered number is not prime");
+        }
+    }
+   }
     
   
   
