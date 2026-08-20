@@ -3,11 +3,9 @@
 
 
 int main(){
-int a ,  b;
+ int a = 10;
+  a= a+ a ;
+  printf("  a is : %d",a);
 
-printf("enter two numbers :a && b");
-scanf("%d%d", &a, &b);
- 
- printf("sum of given two numbers is : %d", a + b);
   return 0;
 }
