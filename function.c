@@ -1,17 +1,26 @@
 #include<stdio.h>
-
-void printHello();
-void printGoodbye();
+ void Namaste();
+ void Bonjour();
 
 
 int main(){
- printHello();
- printGoodbye();
+     printf(" enter I for indian and f for french :");
+      char ch ;
+    scanf("%c", &ch);
+     if(ch == 'I'){
+        Namaste();
+     } else {
+        Bonjour();
+        
+     }
+    
+ return 0;
 }
+ void Namaste(){
+    printf("Namaste \n");
+     }
 
- void printHello(){
-    printf("hello\n");
- }
- void printGoodbye(){
-    printf("Goodbye\n");
- }
+     void Bonjour(){
+        printf("Bonjour\n");
+
+     }
