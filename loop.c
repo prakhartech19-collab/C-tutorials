@@ -1,13 +1,12 @@
 #include<stdio.h>
 
 int main(){
-  int n ; int fact = 1;
-  printf("enter a number :");
-  scanf("%d", &n);
-  for(int i= 1; i <= n; i++){
-    fact *= i;
+  int sum = 0;
+  for(int i = 5; i <= 50; i++){
+    
+      sum += i;
   }
-    printf(" final factorial is %d\n", fact);
+  printf("the sum of numbers between 5 and 50 is %d\n", sum);
   
   return 0;
 }
