@@ -1,26 +1,16 @@
 #include<stdio.h>
- void Namaste();
- void Bonjour();
-
+  int sum(int a , int b);
 
 int main(){
-     printf(" enter I for indian and f for french :");
-      char ch ;
-    scanf("%c", &ch);
-     if(ch == 'I'){
-        Namaste();
-     } else {
-        Bonjour();
-        
-     }
+  int a, b;
+   printf("enter first number :");
+   scanf("%d", &a);
+    printf("enter second number :");
+    scanf("%d", &b);
+    printf("sum is : %d", sum(a, b));
     
  return 0;
 }
- void Namaste(){
-    printf("Namaste \n");
-     }
-
-     void Bonjour(){
-        printf("Bonjour\n");
-
-     }
+ int sum(int a , int b){
+  return (a+b);
+ }
