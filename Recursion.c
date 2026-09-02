@@ -1,18 +1,15 @@
 #include <stdio.h>
 
- int fact(int n);
+  float convertTemp(float celsius);
 
-int main(){
- printf(" factorial is %d", fact(5));
-return 0;
+int main() {
+     float celsius = 100.0;
+     printf("Temprature in farenheit is %f\n", convertTemp(celsius));
+
+    return 0;
+} 
+// recursive function to convert temprature from celsius to farenheit
+float convertTemp(float celsius){
+      float far = celsius * 1.8 + 32;
+      return far;
 }
-
-// recursive function
-  int fact(int n){
-    if( n== 1){
-        return 1;
-    }
-    int factNm1 = fact(n-1); // factorial of n -1
-    int factN = factNm1 * n;
-    return factN;
-  }
