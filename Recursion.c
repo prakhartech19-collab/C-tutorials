@@ -1,15 +1,16 @@
 #include <stdio.h>
+#include <math.h>
 
-  float convertTemp(float celsius);
+int calcpercentage( int  science , int maths , int sanskrit);
 
 int main() {
-     float celsius = 100.0;
-     printf("Temprature in farenheit is %f\n", convertTemp(celsius));
+     int science = 75;
+     int maths = 67 ;
+     int sanskrit = 88;
+     printf("percentage is %d", calcpercentage(science , maths , sanskrit));
 
     return 0;
-} 
-// recursive function to convert temprature from celsius to farenheit
-float convertTemp(float celsius){
-      float far = celsius * 1.8 + 32;
-      return far;
-}
+} // recursive function to calculate percentage of 3 subjects
+ int calcpercentage( int science , int maths , int sanskrit){
+     return ((science + maths + sanskrit))/3;
+ }
