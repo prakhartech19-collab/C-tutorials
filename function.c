@@ -1,17 +1,13 @@
 #include<stdio.h>
-  int sum(int a , int b);
+  void printPrice(float value);
 
 int main(){
-  int a, b;
-   printf("enter first number :");
-   scanf("%d", &a);
-    printf("enter second number :");
-    scanf("%d", &b);
-    
-     int s = sum( a, b);
-      printf("sum is %d : ", s);
+  float value = 100.0;
+   printPrice(value);
+
  return 0;
 }
- int sum(int x , int y){
-  return (x+y);
- }
+  void printPrice(float value){
+    value = value +(0.18 * value);
+    printf(" price with gst is%f", value);
+  }
