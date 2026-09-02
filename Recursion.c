@@ -1,16 +1,25 @@
 #include <stdio.h>
-#include <math.h>
 
-int calcpercentage( int  science , int maths , int sanskrit);
+ int fib(int n);
 
 int main() {
-     int science = 75;
-     int maths = 67 ;
-     int sanskrit = 88;
-     printf("percentage is %d", calcpercentage(science , maths , sanskrit));
+printf("%d", fib(6));
 
     return 0;
 } // recursive function to calculate percentage of 3 subjects
- int calcpercentage( int science , int maths , int sanskrit){
-     return ((science + maths + sanskrit))/3;
- }
+ 
+int fib(int n){
+    if(n==0 || n==1){ // base case 
+        if(n== 0){
+            return 0;
+        }
+            if(n == 1){
+                return 1;
+            }   
+    }
+     int fibNm1= fib(n-1);  // recursive function
+     int fibNm2 = fib(n-2);
+     int fibN = fibNm1 + fibNm2;
+   //printf("fib of %d is : %d\n", n,fibN);
+     return fibN;
+}
