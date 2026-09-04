@@ -1,24 +1,17 @@
 #include <stdio.h>
 
-void swap( int a , int b);
-void _swap( int *a, int *b);
+  void doWork( int a, int b , int*sum , int *prod , int *avg);
 
 int main(){
-   int x = 3,  y= 5;
-  _swap(&x, &y);
-   printf("x = %d & y = %d\n", x , y );
-return 0;   
-}
+  int a= 3 , b = 5;
+ int sum , prod , avg ;
+ doWork( a, b , &sum , &prod , & avg);
 
-// call by refference
- void _swap(int *a , int *b){
-    int t = *a;
-    *a = *b;
-    *b = t ;
+  printf("sum = %d\n, prod = %d\n , avg = %d\n", sum , prod , avg );
+ return 0;
+}
+ void doWork( int a, int b , int *sum ,int *prod , int *avg){
+     *sum = a +b ;
+      *prod = a * b;
+     *avg = (a +b)/2;
  }
-//  void swap( int a, int b){
-//     int t= a;
-//      a =b;
-//       b = t;
-//    printf("a = %d & b = %d\n", a,b );
-//  }

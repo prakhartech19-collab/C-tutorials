@@ -1,25 +1,21 @@
 #include <stdio.h>
 
- int fib(int n);
+void printtemp(float temp)
 
-int main() {
-printf("%d", fib(6));
 
+int main(){
+ printf(" enter temprature in celsius\n");
+ float temp;
+ scanf("%f", &temp);
+ printtemp(temp);   
     return 0;
 } // recursive function to calculate percentage of 3 subjects
- 
-int fib(int n){
-    if(n==0 || n==1){ // base case 
-        if(n== 0){
-            return 0;
-        }
-            if(n == 1){
-                return 1;
-            }   
-    }
-     int fibNm1= fib(n-1);  // recursive function
-     int fibNm2 = fib(n-2);
-     int fibN = fibNm1 + fibNm2;
-   //printf("fib of %d is : %d\n", n,fibN);
-     return fibN;
+  void printtemp(float temp){
+    if (temp<28){
+        printf("feels cold\n");
+    }else if (temp>=28 && temp<= 35){
+        printf("feels Normal\n");
+    }else if (temp>35){
+        printf("feels hot\n");
+    } 
 }
