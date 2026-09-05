@@ -1,19 +1,20 @@
 #include <stdio.h>
-// representation of Arrays
+// with the help of arrays we are entering and printing the prices of 3 items
 int main(){
-  // int marks1 = 75;
-  // int marks2 = 76;
-  // int marks3 = 87;
- int marks[3];
- printf(" enter phy :");
- scanf("%d", &marks[0]);
+  
+  float price[3];
+ printf(" enter P1 :");
+ scanf("%f", &price[0]);
 
- printf("enter chem :");
- scanf("%d", &marks[1]);
+ printf("enter P2:");
+ scanf("%f", &price[1]);
 
- printf("enter math :");
- scanf("%d", &marks[2]);
+ printf("enter P3 :");
+ scanf("%f", &price[2]);
  
-printf("phy = %d, chem = %d , maths = %d", marks[0], marks[1], marks[2]);
+printf("Total  P1 is :%f",price[0] + (0.18*price[0]));
+printf("Total  P2 is :%f",price[1] + (0.18*price[1]));
+printf("Total  P3 is :%f",price[2] + (0.18*price[2]));
+
     return 0;
 }
