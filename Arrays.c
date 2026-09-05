@@ -1,16 +1,21 @@
 #include <stdio.h>
 
- void printNumbers(int *arr,int n);
+int countOdd(int arr[], int n);
 
 int main(){
-   int arr[] = {1,2,3,4,5,6};
-   printNumbers(arr, 6);
+  int arr[] = {1, 2, 3,4 ,5,6};
+  printf("%d", countOdd(arr , 6));
     return 0;
 }
 
-void printNumbers(int *arr, int n){
-  for(int i=0; i<n; i++){
-   printf("%d\t", arr[i]) ;
-  }
-  printf("\n");
+int countOdd(int arr[], int n){
+ int count = 0;
+ for(int i = 0; i<n; i++){
+   if(arr[i] % 2 != 0){//odd
+    count++;
+   }
+ } 
+
+   return count;
 }
+
