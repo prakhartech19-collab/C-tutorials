@@ -1,10 +1,20 @@
 #include <stdio.h>
 
 int main(){
-  int age = 22;
-  int *ptr = &age;
-  printf("ptr = %u", ptr);
-  ptr++;
-printf("ptr = %u", ptr);
+   int aadhar[5];
+
+   //output
+   int *ptr = &aadhar[0];
+   for(int i=0; i<5 ; i++){
+    printf("%d index :", i);
+    scanf("%d", (ptr + i));
+   }
+   //output
+   for(int i=0 ; i<5; i++){
+    printf("%d index= %d\n", i ,aadhar[i]);
+
+   }
+   
+
     return 0;
 }
